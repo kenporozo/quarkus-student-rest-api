@@ -1,0 +1,17 @@
+quarkus:
+  http:
+    port: 8086
+  banner:
+    enabled: false
+  datasource:
+    db-kind: mysql
+    username: root
+    password: admin
+    jdbc:
+     url: jdbc:mysql://localhost:3309/quarkus-test
+  hibernate-orm:
+    log:
+      format-sql: true
+    database:
+      generation: drop-and-create
+
